@@ -1,6 +1,7 @@
 <router-outlet>
   <div class="all-content">
-    <div class="sell-content" *ngFor="let token of serie">
+    <ng-container *ngIf="(serie$ | async) as data">
+    <div class="sell-content" *ngFor="let token of data">
       <div class="texts">
         <p class="title-serie">
             {{token.title}}
@@ -16,3 +17,5 @@
               <img [src]='token.get_image' alt="">
         </div>
     </div>
+  </ng-container>
+</div>

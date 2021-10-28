@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { DataService } from 'src/app/data.service';
+import { Serie } from 'src/app/inferface/model';
 
 @Component({
   selector: 'app-active-page',
@@ -7,13 +10,11 @@ import { DataService } from 'src/app/data.service';
   styleUrls: ['./active-page.component.scss']
 })
 export class ActivePageComponent implements OnInit {
-  public serie: any = [];
+  serie$!: Observable<Serie[]>;
 
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.dataService.getActivePage().subscribe(res => {
-      this.serie = res;
-  })
-}
+    this.serie$ = this.dataService.getActivePage()
+  }
 }

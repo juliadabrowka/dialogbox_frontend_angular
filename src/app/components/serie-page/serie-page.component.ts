@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from 'src/app/data.service';
 import { switchMap, takeUntil } from 'rxjs/operators'
-import { Destroyer } from 'src/app/destroyer';
+import { Destroyer } from 'src/app/helpers/destroyer';
 
 @Component({
   selector: 'app-serie-page',

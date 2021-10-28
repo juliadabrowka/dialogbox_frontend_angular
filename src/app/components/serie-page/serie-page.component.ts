@@ -13,7 +13,6 @@ import { Destroyer } from 'src/app/helpers/destroyer';
 
 export class SeriePageComponent extends Destroyer implements OnInit {
   public serieDetails: any = [];
-  public slug = ''
 
   constructor(private serieService: DataService,
     private activatedRoute: ActivatedRoute,
@@ -21,7 +20,7 @@ export class SeriePageComponent extends Destroyer implements OnInit {
       super()
     }
 
-  getContent(): void {
+  private getContent(): void {
     this.activatedRoute.params
     .pipe(switchMap((params: any) => 
       this.serieService.getSeriePage(params.slug)),

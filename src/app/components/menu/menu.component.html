@@ -1,0 +1,27 @@
+<div class='menu-navbar'>
+    <div class="topnav"><a routerLink=""><img src='../../assets/images/logo-small.png' class="logo-img"></a></div>
+      <a href="#" class="toggle-button">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </a>
+          <span id="topnav" class="dropdown">Collections
+            <span class='active' >
+              <a routerLink="active">Active</a>
+                <li *ngFor="let data of series"><a [routerLink]="['/serie', data.slug]">{{data.title}}</a></li>
+            </span>
+          </span>
+        <div id="topnav"><a routerLink="about-us">About us</a></div>
+        <div id="topnav"><a routerLink="charity">Charity</a></div>
+          <div id='topnav'>
+            <span class='social-media'>
+              <a href="https://www.instagram.com/dialogbox_nft/" target="blank">
+                <img src="../../../assets/images/insta.png" alt="" class='sm-pics'></a>
+              <a href="https://opensea.io/" target="blank">
+                <img src="../../../assets/images/opensea.png" alt="" class="sm-pics"></a>
+              <a href="https://twitter.com/dialogboxnft?s=21" target="blank">
+                <img src="../../../assets/images/twitter.png" alt="" class="sm-pics"></a>
+            </span>
+          </div>
+    <hr>
+  </div>

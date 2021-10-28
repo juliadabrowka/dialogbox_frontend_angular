@@ -1,0 +1,18 @@
+<router-outlet>
+  <div class="all-content">
+    <div class="sell-content" *ngFor="let token of serie">
+      <div class="texts">
+        <p class="title-serie">
+            {{token.title}}
+        </p>
+        <p class="serie-description">
+          {{token.description}}
+        </p>
+        <div class="hr-line">
+          <a [routerLink]="['/serie', token.slug]"><app-button></app-button></a>
+        </div>
+      </div>
+        <div class="gallery">
+              <img [src]='token.get_image' alt="">
+        </div>
+    </div>

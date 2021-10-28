@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Inter;
+    margin-top: 15%
+  }
+  
+  
+  @media only screen and (max-width: 320px){ 
+    body  {margin-top: 43% }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width:425px){ 
+    body  {margin-top: 35% }
+  }
+  
+  @media only screen and (min-width: 425px){ 
+    body  {margin-top: 45% }
+  }
+
+  @media only screen and (min-width: 425) and (max-width: 500px) {
+    body  {margin-top: 45% }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    body  {margin-top: 13%}
+  }
+  
+  @media only screen and (min-width: 1440px){ 
+    body  {margin-top: 10%}
+  }
+  
+  @media only screen and (min-width: 1920px){ 
+    body  {margin-top: 11% }
+  }
+  

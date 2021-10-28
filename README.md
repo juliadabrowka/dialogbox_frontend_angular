@@ -14,7 +14,7 @@ Download the code.
 
 To connect to backend at first you need to have Python downloaded on your device. Link for that : https://www.python.org/downloads/release/python-3100/
 
-Then create a virtual environment for the project : https://docs.python.org/3/tutorial/venv.html
+Then create a virtual environment for the project : https://docs.python.org/3/tutorial/venv.html Itis not obligatory, you can skip this step and install everything globally on you device. Up to you.
 
 When you enter to the evironment enter the backend repo folder and use the command : 
 

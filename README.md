@@ -9,13 +9,21 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Connecting with backend
 
 The backend repo is right here : https://github.com/juliadabrowka/dialogbox_python_backend
+
 Download the code.
+
 To connect to backend at first you need to have Python downloaded on your device. Link for that : https://www.python.org/downloads/release/python-3100/
+
 Then create a virtual environment for the project : https://docs.python.org/3/tutorial/venv.html
+
 When you enter to the evironment enter the backend repo folder and use the command : 
+
 pip install -r requirements.txt
+
 It should install all the dependencies for you.
+
 Then enter to the project folder by : cd collage and run the command : python manage.py runserver
+
 The back end should be fired properly.
 
 ## About the project

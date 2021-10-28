@@ -24,7 +24,7 @@ It should install all the dependencies for you.
 
 Then enter to the project folder by : cd collage and run the command : python manage.py runserver
 
-The back end should be fired properly.
+The backend should be fired properly.
 
 ## About the project
 

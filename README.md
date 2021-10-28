@@ -6,22 +6,41 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Connecting with backend
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The backend repo is right here : https://github.com/juliadabrowka/dialogbox_python_backend
+Download the code.
+To connect to backend at first you need to have Python downloaded on your device. Link for that : https://www.python.org/downloads/release/python-3100/
+Then create a virtual environment for the project : https://docs.python.org/3/tutorial/venv.html
+When you enter to the evironment enter the backend repo folder and use the command : 
+pip install -r requirements.txt
+It should install all the dependencies for you.
+Then enter to the project folder by : cd collage and run the command : python manage.py runserver
+The back end should be fired properly.
 
-## Build
+## About the project
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+It's a prototype of website where you can upload images (on backend -> Django), give them name, author and serie.
 
-## Running unit tests
+The main page component shows you all the images that are uploaded on the backend.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![image](https://user-images.githubusercontent.com/76727970/139287624-c7aa0d9e-2a97-48d6-ae46-87d1bd6d9d3b.png)
 
-## Running end-to-end tests
+When you hover one you can see title, author, number of image and serie.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![image](https://user-images.githubusercontent.com/76727970/139288031-add0d231-45b8-4a9c-a463-88bdaa27a261.png)
 
-## Further help
+On a serie page component you can see an exact serie of your choice with tokens which belong to that serie. Images, titles and descriptions of each serie are filtered by the slug given by API.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![image](https://user-images.githubusercontent.com/76727970/139288160-aa092b88-4dcd-49f7-b584-446fa4f4dea5.png)
+
+Menu bar also gets data from API. The 'Collection' section open when you hover over it and shows you all the series which are available on backend.
+
+![image](https://user-images.githubusercontent.com/76727970/139288616-3a51bd00-ae90-4210-b9a9-9c808a3b1c3a.png)
+
+When you hover over Collection at menu bar and click Active there will be shown list of all available series with their cover. You can enter each serie by button 'View gallery'
+
+![image](https://user-images.githubusercontent.com/76727970/139294734-1345d31f-fbe8-4c52-8c4a-f8727954ed4c.png)
+
+The images are property of Dialogbox and I don't get any material interest of using it.
+See their SM here : https://www.instagram.com/dialogbox_nft/ :)))

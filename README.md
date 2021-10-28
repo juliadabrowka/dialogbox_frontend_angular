@@ -4,25 +4,25 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-After downloading the folder. Enter it and use: `npm install package.json` command to install the dependencies.
+After downloading the folder. Enter it and use `npm install package.json` command to install the dependencies.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Connecting with backend
 
-The backend repo is right here : https://github.com/juliadabrowka/dialogbox_python_backend
+The backend repo is right here https://github.com/juliadabrowka/dialogbox_python_backend
 
 Download the code.
 
-To connect to backend at first you need to have Python downloaded on your device. Link for that : https://www.python.org/downloads/release/python-3100/
+To connect to backend at first you need to have Python downloaded on your device. Link for that https://www.python.org/downloads/release/python-3100/
 
-Then create a virtual environment for the project : https://docs.python.org/3/tutorial/venv.html It is not obligatory, you can skip this step and install everything globally on you device. Up to you.
+Then create a virtual environment for the project https://docs.python.org/3/tutorial/venv.html It is not obligatory, you can skip this step and install everything globally on you device. Up to you.
 
-When you enter to the evironment enter the backend repo folder and use the command : `pip install -r requirements.txt`
+When you enter to the evironment enter the backend repo folder and use the command `pip install -r requirements.txt`
 
 It should install all the dependencies for you.
 
-Then enter to the project folder by `cd collage` and run the command : `python manage.py runserver`
+Then enter to the project folder by `cd collage` and run the command `python manage.py runserver`
 
 The backend should be fired properly.
 

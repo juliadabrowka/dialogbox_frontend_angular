@@ -12,6 +12,7 @@ import { CharityPageComponent } from './components/charity-page/charity-page.com
 import { SeriePageComponent } from './components/serie-page/serie-page.component';
 import { ButtonComponent } from './components/button/button.component';
 import { DataService } from './data.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DataService } from './data.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

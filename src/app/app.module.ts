@@ -12,7 +12,8 @@ import { CharityPageComponent } from './components/charity-page/charity-page.com
 import { SeriePageComponent } from './components/serie-page/serie-page.component';
 import { ButtonComponent } from './components/button/button.component';
 import { DataService } from './data.service';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +24,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     ActivePageComponent,
     CharityPageComponent,
     SeriePageComponent,
-    ButtonComponent
+    ButtonComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

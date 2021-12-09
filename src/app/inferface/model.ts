@@ -12,6 +12,6 @@ export interface Serie {
     description:  string;
     get_absolute_url: string;
     slug: string;
-    tokens: Token[];
+    tokens: Array<Token>;
     choices: string;
 }

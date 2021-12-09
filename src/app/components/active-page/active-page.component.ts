@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
 import { DataService } from 'src/app/data.service';
 import { Serie } from 'src/app/inferface/model';
 

@@ -1,18 +1,13 @@
 <div class='menu-navbar'>
-  <div class="topnav"><a routerLink=""><img src='../../assets/images/logo-small.png' class="logo-img"></a></div>
-    <a href="#" class="toggle-button">
-      <span class="hamburger"></span>
-      <span class="hamburger"></span>
-      <span class="hamburger"></span>
-    </a>
+  <div class="topnav" routerLink=""><img src='../../assets/images/logo-small.png' class="logo-img"></div>
         <span id="topnav" class="dropdown">Collections
           <span class='active' >
             <a routerLink="active">Active</a>
               <li *ngFor="let data of series"><a [routerLink]="['/serie', data.slug]">{{data.title}}</a></li>
           </span>
         </span>
-      <div id="topnav"><a routerLink="about-us">About us</a></div>
-      <div id="topnav"><a routerLink="charity">Charity</a></div>
+      <div id="topnav" routerLink="about-us">About us</div>
+      <div id="topnav" routerLink="charity">Charity</div>
         <div id='topnav'>
           <span class='social-media'>
             <a href="https://www.instagram.com/dialogbox_nft/" target="blank">

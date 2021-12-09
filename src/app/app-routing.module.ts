@@ -4,6 +4,7 @@ import { AboutPageComponent } from './components/about-page/about-page.component
 import { ActivePageComponent } from './components/active-page/active-page.component';
 import { CharityPageComponent } from './components/charity-page/charity-page.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { SeriePageComponent } from './components/serie-page/serie-page.component';
 
 const routes: Routes = [
@@ -27,6 +28,10 @@ const routes: Routes = [
     path: 'serie/:slug',
     component: SeriePageComponent
   },
+  {
+    path:'**',
+    component: PageNotFoundComponent
+  }
 ];
 
 @NgModule({
